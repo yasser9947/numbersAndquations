@@ -233,6 +233,7 @@ $("#button").on("click", function () {
 
 let realQuations = quations
 function quationToThePlayer(x , color , player){
+   
     var theQuation = realQuations[Math.floor(Math.random() * realQuations.length)]
     realQuations = realQuations.filter(ele => ele.answer != theQuation.answer)
     console.log(realQuations.length)
